@@ -3,16 +3,11 @@ import os
 import anthropic
 from dotenv import load_dotenv
 
+from careroute.prompts import SYSTEM_PROMPT
 from careroute.tools import HANDLERS, TOOLS
 
 MODEL = "claude-sonnet-4-6"
 MAX_TURNS = 8
-SYSTEM_PROMPT = (
-    "You are CareRoute, an AI intake triage assistant. Gather the caller's "
-    "symptoms, assess urgency, and route them to the appropriate level of "
-    "care. Use the available tools when they would improve your assessment. "
-    "You do not diagnose; you triage and route."
-)
 
 
 def _get_client() -> anthropic.Anthropic:
