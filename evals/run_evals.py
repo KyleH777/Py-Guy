@@ -34,9 +34,15 @@ def run_case(case: dict) -> dict:
     try:
         result = run_triage(case["input"], max_tokens=MAX_TOKENS)
         called = [c["name"] for c in result["tool_calls"]]
-        record["actual_urgency"] = extract_urgency(result["summary"])
-        record["urgency_ok"] = record["actual_urgency"] == case["expected_urgency"]
-        record["tools_ok"] = all(t in called for t in case["expected_tools"])
+        actual = extract_urgency(result["summary"])
+        if case["expected_urgency"] == "clarify":
+            record["actual_urgency"] = actual or "clarify"
+            record["urgency_ok"] = actual is None and "?" in result["summary"]
+            record["tools_ok"] = "score_urgency" not in called
+        else:
+            record["actual_urgency"] = actual
+            record["urgency_ok"] = actual == case["expected_urgency"]
+            record["tools_ok"] = all(t in called for t in case["expected_tools"])
         record["passed"] = record["urgency_ok"] and record["tools_ok"]
         record["tool_calls"] = called
         record["summary"] = result["summary"]
