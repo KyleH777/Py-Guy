@@ -1,0 +1,92 @@
+[
+  {
+    "id": "emergency_chest_pain",
+    "input": "I have crushing chest pressure radiating to my left arm and I'm sweating. It started 30 minutes ago.",
+    "expected_urgency": "emergency",
+    "expected_tools": ["lookup_symptoms", "score_urgency", "suggest_appointment"]
+  },
+  {
+    "id": "emergency_stroke_signs",
+    "input": "My face suddenly started drooping on one side an hour ago and my speech is slurred.",
+    "expected_urgency": "emergency",
+    "expected_tools": ["lookup_symptoms", "score_urgency", "suggest_appointment"]
+  },
+  {
+    "id": "emergency_thunderclap_headache",
+    "input": "The worst headache of my life hit me out of nowhere ten minutes ago, like a thunderclap. I'm also confused.",
+    "expected_urgency": "emergency",
+    "expected_tools": ["lookup_symptoms", "score_urgency", "suggest_appointment"]
+  },
+  {
+    "id": "urgent_high_fever",
+    "input": "I've had a fever around 103F for two days and I feel awful, maybe 8 out of 10 bad. No stiff neck, no rash.",
+    "expected_urgency": "urgent",
+    "expected_tools": ["lookup_symptoms", "score_urgency", "suggest_appointment"]
+  },
+  {
+    "id": "urgent_severe_back_pain",
+    "input": "My back pain flared up yesterday and it's a 9 out of 10. No numbness, no bladder problems, no injury.",
+    "expected_urgency": "urgent",
+    "expected_tools": ["lookup_symptoms", "score_urgency", "suggest_appointment"]
+  },
+  {
+    "id": "urgent_ear_pain",
+    "input": "Severe ear pain since last night, I'd say 8 out of 10. My hearing is fine and I have no fever.",
+    "expected_urgency": "urgent",
+    "expected_tools": ["lookup_symptoms", "score_urgency", "suggest_appointment"]
+  },
+  {
+    "id": "routine_persistent_cough",
+    "input": "I've had a nagging cough for about two weeks. It's mild, maybe 3 out of 10, no blood, breathing is fine.",
+    "expected_urgency": "routine",
+    "expected_tools": ["lookup_symptoms", "score_urgency", "suggest_appointment"]
+  },
+  {
+    "id": "routine_joint_pain",
+    "input": "My knee has been achy for three weeks, around 4 out of 10. No swelling or fever, I can walk fine.",
+    "expected_urgency": "routine",
+    "expected_tools": ["lookup_symptoms", "score_urgency", "suggest_appointment"]
+  },
+  {
+    "id": "routine_fatigue",
+    "input": "I've been unusually tired for about a month. Moderate, like 4 out of 10. Sleeping okay, no weight loss.",
+    "expected_urgency": "routine",
+    "expected_tools": ["lookup_symptoms", "score_urgency", "suggest_appointment"]
+  },
+  {
+    "id": "routine_moderate_headaches",
+    "input": "I keep getting headaches most afternoons for the past ten days, about 5 out of 10. Nothing sudden or severe.",
+    "expected_urgency": "routine",
+    "expected_tools": ["lookup_symptoms", "score_urgency", "suggest_appointment"]
+  },
+  {
+    "id": "self_care_mild_sore_throat",
+    "input": "I woke up with a scratchy sore throat this morning. It's mild, 2 out of 10, I can swallow and breathe fine.",
+    "expected_urgency": "self_care",
+    "expected_tools": ["lookup_symptoms", "score_urgency", "suggest_appointment"]
+  },
+  {
+    "id": "self_care_mild_nausea",
+    "input": "I felt a little queasy after dinner last night, maybe 2 out of 10. I'm keeping fluids down fine today.",
+    "expected_urgency": "self_care",
+    "expected_tools": ["lookup_symptoms", "score_urgency", "suggest_appointment"]
+  },
+  {
+    "id": "self_care_minor_rash",
+    "input": "I noticed a small itchy rash on my wrist yesterday, very mild, 1 out of 10. No fever, not spreading.",
+    "expected_urgency": "self_care",
+    "expected_tools": ["lookup_symptoms", "score_urgency", "suggest_appointment"]
+  },
+  {
+    "id": "vague_not_feeling_well",
+    "input": "I just don't feel great lately.",
+    "expected_urgency": "routine",
+    "expected_tools": ["lookup_symptoms"]
+  },
+  {
+    "id": "vague_off_stomach",
+    "input": "My stomach has been a bit off.",
+    "expected_urgency": "self_care",
+    "expected_tools": ["lookup_symptoms"]
+  }
+]

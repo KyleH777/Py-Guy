@@ -8,6 +8,7 @@ from careroute.tools import HANDLERS, TOOLS
 
 MODEL = "claude-sonnet-4-6"
 MAX_TURNS = 8
+DEFAULT_MAX_TOKENS = 4096
 
 
 def _get_client() -> anthropic.Anthropic:
@@ -44,7 +45,7 @@ def _execute_tool(block) -> dict:
         }
 
 
-def run_triage(user_input: str) -> dict:
+def run_triage(user_input: str, max_tokens: int = DEFAULT_MAX_TOKENS) -> dict:
     client = _get_client()
     messages = [{"role": "user", "content": user_input}]
     tool_calls = []
@@ -54,7 +55,7 @@ def run_triage(user_input: str) -> dict:
     while turns < MAX_TURNS:
         response = client.messages.create(
             model=MODEL,
-            max_tokens=4096,
+            max_tokens=max_tokens,
             system=SYSTEM_PROMPT,
             tools=TOOLS,
             messages=messages,
