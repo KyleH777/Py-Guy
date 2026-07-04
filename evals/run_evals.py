@@ -13,8 +13,12 @@ MAX_TOKENS = 1024
 
 
 def extract_urgency(summary: str) -> str | None:
-    match = re.search(r"urgency level\W+(emergency|urgent|routine|self_care)", summary.lower())
-    return match.group(1) if match else None
+    match = re.search(
+        r"urgency level\W+(emergency|urgent|routine|self[\s_-]?care)", summary.lower()
+    )
+    if not match:
+        return None
+    return re.sub(r"[\s-]", "_", match.group(1))
 
 
 def run_case(case: dict) -> dict:
