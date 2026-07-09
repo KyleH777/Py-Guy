@@ -1,0 +1,82 @@
+{
+  "headache": {
+    "possible_causes": ["tension headache", "migraine", "dehydration"],
+    "red_flags": ["sudden thunderclap onset", "worst headache of life", "confusion or slurred speech"]
+  },
+  "fever": {
+    "possible_causes": ["viral infection", "bacterial infection", "flu"],
+    "red_flags": ["temperature above 104F", "stiff neck", "fever lasting more than 5 days"]
+  },
+  "cough": {
+    "possible_causes": ["common cold", "bronchitis", "allergies"],
+    "red_flags": ["coughing up blood", "difficulty breathing", "cough lasting more than 3 weeks"]
+  },
+  "chest pain": {
+    "possible_causes": ["muscle strain", "acid reflux", "costochondritis"],
+    "red_flags": ["pain radiating to arm or jaw", "pressure or crushing sensation", "accompanied by sweating or nausea"]
+  },
+  "shortness of breath": {
+    "possible_causes": ["asthma", "anxiety", "respiratory infection"],
+    "red_flags": ["at rest or worsening rapidly", "blue lips or fingertips", "accompanied by chest pain"]
+  },
+  "abdominal pain": {
+    "possible_causes": ["indigestion", "gastroenteritis", "constipation"],
+    "red_flags": ["severe localized right lower pain", "rigid abdomen", "blood in stool or vomit"]
+  },
+  "nausea": {
+    "possible_causes": ["gastroenteritis", "food poisoning", "motion sickness"],
+    "red_flags": ["unable to keep fluids down for 24 hours", "severe headache with nausea", "signs of dehydration"]
+  },
+  "vomiting": {
+    "possible_causes": ["stomach virus", "food poisoning", "medication side effect"],
+    "red_flags": ["blood or coffee-ground appearance", "vomiting more than 24 hours", "severe abdominal pain"]
+  },
+  "diarrhea": {
+    "possible_causes": ["viral gastroenteritis", "food intolerance", "medication side effect"],
+    "red_flags": ["blood in stool", "signs of severe dehydration", "lasting more than 7 days"]
+  },
+  "sore throat": {
+    "possible_causes": ["viral pharyngitis", "strep throat", "postnasal drip"],
+    "red_flags": ["difficulty swallowing or breathing", "drooling", "muffled voice with high fever"]
+  },
+  "back pain": {
+    "possible_causes": ["muscle strain", "poor posture", "sciatica"],
+    "red_flags": ["loss of bladder or bowel control", "numbness in groin area", "following significant trauma"]
+  },
+  "dizziness": {
+    "possible_causes": ["inner ear issue", "low blood pressure", "dehydration"],
+    "red_flags": ["sudden onset with weakness on one side", "fainting", "accompanied by chest pain"]
+  },
+  "fatigue": {
+    "possible_causes": ["poor sleep", "stress", "anemia"],
+    "red_flags": ["sudden extreme fatigue", "accompanied by chest pain or breathlessness", "unexplained weight loss"]
+  },
+  "rash": {
+    "possible_causes": ["contact dermatitis", "eczema", "allergic reaction"],
+    "red_flags": ["spreading rapidly with fever", "blistering or skin peeling", "purple spots that do not fade with pressure"]
+  },
+  "joint pain": {
+    "possible_causes": ["overuse", "osteoarthritis", "minor injury"],
+    "red_flags": ["hot swollen joint with fever", "sudden inability to bear weight", "visible deformity"]
+  },
+  "ear pain": {
+    "possible_causes": ["ear infection", "earwax buildup", "swimmer's ear"],
+    "red_flags": ["sudden hearing loss", "discharge with high fever", "swelling behind the ear"]
+  },
+  "painful urination": {
+    "possible_causes": ["urinary tract infection", "dehydration", "irritation"],
+    "red_flags": ["blood in urine", "flank pain with fever", "unable to urinate"]
+  },
+  "eye redness": {
+    "possible_causes": ["conjunctivitis", "allergies", "dry eyes"],
+    "red_flags": ["sudden vision change", "severe eye pain", "light sensitivity with headache"]
+  },
+  "numbness": {
+    "possible_causes": ["pinched nerve", "poor circulation", "carpal tunnel"],
+    "red_flags": ["sudden onset on one side of body", "facial drooping", "difficulty speaking"]
+  },
+  "palpitations": {
+    "possible_causes": ["caffeine", "anxiety", "dehydration"],
+    "red_flags": ["accompanied by chest pain or fainting", "lasting more than a few minutes", "history of heart disease"]
+  }
+}
